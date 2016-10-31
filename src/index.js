@@ -17,12 +17,12 @@ render(
      
 if (module.hot) {
     module.hot.accept('./root', () => {
-    	let Root = require('./root');
+    	let Root = require('./root').default;
         render(
-	    <AppContainer>
-	    	<Root store={store}/>
-	    </AppContainer>,
-        document.getElementById('root')
+    	    <AppContainer>
+    	    	<Root store={store}/>
+    	    </AppContainer>,
+            document.getElementById('root')
         );
     });
 }

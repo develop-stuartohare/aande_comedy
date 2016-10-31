@@ -46,8 +46,7 @@ var babelLoader = {
 
 var lessLoader = { 
     test: /\.less$/, 
-    loader: 'style!css!less'
-    // loader: ExtractTextPlugin.extract("style-loader", isDev ? "css-loader?sourceMap!less-loader?sourceMap" :"css-loader!less-loader")
+    loader: 'style!css!less' 
 } 
 var cssLoader = {
     test: /\.css$/,
@@ -84,9 +83,7 @@ var plugins = [
 	    	'PRODUCTION': JSON.stringify(NODE_ENV==="production"),
 	    	'DEVELOPMENT': JSON.stringify(NODE_ENV==="development"),	    				
 		}			   	    		    		   
-	}),   
-	new webpack.optimize.CommonsChunkPlugin('vendor', '../public/js/vendor.js'),    	    	
-	// new ExtractTextPlugin('css/app.css', {allChunks:true})      			      
+	})	    			    
 ];
 
 
@@ -104,8 +101,7 @@ var browserConfig = {
 	target: 'web',
 	name: 'client',  
     entry: {  	
-    	app : paths.appIndex,
-    	vendor : ['react', 'react-dom','redux', 'redux-thunk','jquery','underscore']
+    	app : paths.appIndex
     },
     output: {        
         path: paths.appBuild,        
