@@ -1,5 +1,7 @@
-# aande_comedy
+# A & E Comedy
 
+## About
+Single page React/Redux project built for comedy duo A & E Comedy
 
 ## Build Instructions
 
