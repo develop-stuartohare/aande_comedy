@@ -1,0 +1,35 @@
+.nav {
+	background-color: fade(white, 95);
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+
+	.nav-item-inner {
+		color:#999;
+		text-decoration: none;
+
+		transition: color 0.3s;
+
+		&:hover {
+			color: #666;
+		}
+	}
+
+}
+
+@media all and (max-width: 480px){
+
+
+	.nav-item {
+		font-size: 20px;
+		.nav-item-inner {
+			padding: 0 7px;
+		}
+	}
+
+	.nav-items {
+		&>.float-right {
+			float: none;
+			margin-top:10px;
+			text-align: center;
+		}
+	}
+} 

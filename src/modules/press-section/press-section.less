@@ -1,3 +1,64 @@
-body {
+section.press-section {
+
 	
+	.chair, .abigail-head, .emma-head, .link, .read-this {
+		position: absolute;
+	}
+
+	.sofa {				
+		position: relative;
+		top:100px;
+		width:574px;
+		height:758px;
+		margin: 100px auto 0;
+
+
+		.chair {
+			top:100px;
+			width:574px;
+			height:658px;
+		}
+		.abigail-head {
+		    left: 132px;
+		    top: 0px;
+		}
+		.emma-head{
+		    left: 220px;
+		    top: 61px;
+		}
+
+		.read-this {
+			top:300px;
+			left:200px;
+		}
+	}
+
+	.link {
+		
+	}	
+
+	.footer {
+		background-color: black;
+		padding:25px;
+		text-align: center;
+		
+		.the-end {
+			display: inline-block;
+			
+		}
+	}
+
+
+}
+@media all and (max-width:574px){
+	section.press-section {
+		.sofa {
+			left:-70px;
+		}
+	}
+}
+@media all and (max-width:1023px){
+	section.press-section {
+
+	}
 }

@@ -1,0 +1,59 @@
+.cloud-container {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    // height:600px;
+    
+
+}
+.cloud {
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+
+    .cloud-bg-container {
+        background-repeat:repeat-x;
+        background-position: 50%;
+        height:500px;
+        width: 100%;
+        z-index:20;        
+    }
+}
+
+.cloud-back {
+
+    bottom:-600px; 
+    .cloud-bg-container {
+        background-image: url('./images/clouds_backRow.png'); 
+        height:615px;   
+    }
+
+    .cloud-bg-extended {
+        background-color: #DDDDD4;
+        width:100%;
+        height:600px;
+    }
+    
+}
+
+.cloud-middle {
+    bottom: 130px;
+    .cloud-bg-container {
+        background-image: url('./images/clouds_secondRow2.png');
+        height: 325px;
+    }
+}
+
+.cloud-front {
+
+    bottom:-300px;    
+    .cloud-bg-container {
+        background-image: url('./images/clouds_frontRow.png');
+        height:392px;
+    }
+    .cloud-bg-extended {
+        background-color: #F4F4F2;
+        width:100%;
+        height:300px;
+    }    
+}

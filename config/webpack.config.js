@@ -90,7 +90,8 @@ var plugins = [
 var browserPlugins = [
 	new webpack.ProvidePlugin({
 	    $: "jquery",
-	    jQuery: "jquery"
+	    jQuery: "jquery",
+        "window.jQuery": "jquery"
 	})
 ].concat(plugins)
 
@@ -107,7 +108,7 @@ var browserConfig = {
         path: paths.appBuild,        
         filename: 'js/[name].js', 
         chunkFilename: 'js/[name].js',      
-        publicPath: '/'       
+        publicPath: ''       
     },
     eslint: eslintConfig,     
     module: {		

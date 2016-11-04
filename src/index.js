@@ -1,9 +1,15 @@
+import 'jquery-inview';
+import 'velocity-animate';
 import React from 'react';
 import {render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import Root from './root';
 import configureStore from './configure-store';
+
+import './animation-setup';
+
+import './index.less';
 
 const store = configureStore({});
 

@@ -1,0 +1,35 @@
+.modal {
+	position: fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index:30;
+
+	overflow-y: scroll;	
+	
+	&[disabled]{
+		display: none;
+	}
+
+	.modal-blanker {
+		position: absolute;
+		width:100%;
+		height:100%;
+		background-color: fade(black, 40);
+	}
+
+	.modal-content-container {
+		width:100%;		
+		margin:80px 0;
+
+	}
+	.modal-content {
+		position: relative;
+		background-color: black;
+		color:white;
+		max-width: 982px;
+		// height:610px;
+		margin : 0 auto;
+	}
+}
