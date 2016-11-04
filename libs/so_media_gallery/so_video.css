@@ -1,0 +1,129 @@
+.cImageLinkWrapperSlider
+{
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+
+.cImageLinksGalleryNav
+{
+    position : relative;
+    font-size: 2.3em;
+    height:32px;
+    width:32px;
+    margin:0px auto;
+    /*background-size: 28px 28px;*/
+    background-repeat: no-repeat;       
+    opacity :0.7;
+
+    cursor: pointer;
+    
+    transition: all 0.3s;
+    
+    z-index:20;
+}
+
+.cImageLinksGalleryNav:hover
+{
+    opacity: 1;
+}
+
+.cImageLinksGalleryNav.cPrevious
+{
+    background-image: url('nav_left.png');
+    left: -290px;
+    top: 358px;
+    
+}
+
+.cImageLinksGalleryNav.cNext
+{
+    background-image: url('nav_right.png');
+    left: 290px;
+    top: 330;
+}
+
+
+[page_id="cFirstPage"] .cImageLinksGalleryNav.cPrevious,
+[page_id="cLastPage"] .cImageLinksGalleryNav.cNext
+{
+    cursor: default;
+    opacity:0.1;
+}
+
+.cGalleryLink
+{
+    float:left;
+    width: 100%;
+    margin:0 0 40px 0;
+    position: relative;
+    overflow: hidden;
+    /*border-radius: 10px;*/
+    box-shadow: 2px 8px 14px rgba(0,0,0,0.3);    
+}
+
+
+.cGalleryLink .cGalleryThumbTitle
+{
+    display: none;
+    position: absolute;
+    top: -25px;
+    left:0;
+    right:0px;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    color:#FFF;
+    font-size: 0.9em;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    
+    transition: top 0.3s;
+}
+
+.cGalleryLink:hover .cGalleryThumbTitle
+{
+    top:0px;
+}
+.cGalleryLink img
+{
+    width:100%;
+    height:auto;
+}
+
+.cGalleryLink .cPlayIcon
+{
+    background-image: url('play_overlay_icon_small.png');
+    background-repeat: no-repeat;
+    width:258px;
+    height:144px;
+    position:absolute;
+    top: 65px;
+    left: 141px;
+    opacity:0.4;
+    transition: opacity 0.5s;
+}
+
+.cGalleryLink:hover .cPlayIcon
+{
+    opacity:1;
+}
+
+.cVideoWrapper
+{
+    position: relative;
+    margin: 0;
+}
+
+.cVideoPage video
+{
+    width: 100%;
+    height:auto;
+}
+
+.cVideoPage video:active,
+.cVideoPage video:focus
+{
+    outline: none;
+}

@@ -1,0 +1,330 @@
+
+.cModalWrapper
+{    
+    
+    top: 0;
+    background: #000;
+    /*border-radius: 10px;*/    
+    
+    width: 100%;
+    height:610px;
+    max-width:982px;
+    
+    
+    z-index: 5;    
+    margin: 0 auto;
+    position: relative;
+    
+    padding:20px;
+}
+
+.cModalWrapper.cModalInPage
+{
+   
+}
+
+.cModalWrapper.cModalInPopup
+{
+    display:none;
+    background: #000;
+}
+
+
+ .cModalClose
+{
+/*    margin: 4px 10px 0 0;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 2100001;
+    opacity: 0.7;
+    transition: opacity 0.5s;*/
+    position: absolute;
+    right: 5px;
+    top: -16px;
+    background-image: url('close_button.png');
+    background-position: 0 0;
+    width: 32px;
+    height: 32px;
+}
+
+
+.cModalClose:hover
+{
+    cursor:pointer;
+    opacity: 1;
+    background-position: 0 -38px;
+}
+
+.cModalPageWrapper
+{
+    float:left;
+    position:relative;
+    overflow : hidden;
+
+    margin:0px auto;
+    background: #000;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width:805px;
+    height:615px;
+}
+
+.cModalInPopup .cModalPageWrapper
+{
+    /*height:auto;*/
+    
+}
+
+
+.cModalPage
+{
+    display:none;
+    /*position: absolute;*/
+    width:100%;
+    /*height: 500px;*/
+    color:#FFF;
+    margin: 0px auto;
+}
+
+.cModalPage.cActive
+{
+    display: block;  
+}
+
+.cModalPage
+{
+    opacity: 0;
+    text-align: center;
+    /*transition:opacity 2.12s linear;*/
+}
+
+.cModalPage.cActive 
+{
+    opacity:1;
+    transition:opacity 0.12s linear;
+}
+
+
+.cModalPage h3
+{
+    margin-top:0px;
+    font-size:16px;
+/*    position: absolute;
+    z-index: 4;
+    opacity: 0.7;
+    right: 40px;
+    bottom:50px;*/
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) 
+{
+    .cModalPage h3
+    {
+        font-size:6px;
+    }
+}
+
+.cModalPage .cDescription
+{
+    text-align: justify;
+    margin: 20px 0 15px;
+    padding-right: 12px;
+    overflow-y: scroll;
+    height: 144px;
+}
+
+
+.cModalPage .cDescription p
+{
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) 
+{
+    .cModalPage .cDescription p
+    {
+        font-size: 6px;
+    }
+    .cModalPage .cDescription 
+    {
+        font-size: 6px;
+    }
+}
+
+.cModalPage .cImageWrapper,
+.cModalPage .cVideoWrapper
+{
+    background: #000;
+    
+}
+.cModalPage .cImageWrapper img,
+.cModalPage .cVideoWrapper 
+{
+    width: auto;
+    height: 415px;
+}
+
+
+
+
+.cModalNavWrapper
+{    
+    position:relative;
+    background: #000;
+    float:left;
+    width: 162px;
+    height:100%;
+    text-align: center;
+}
+
+.cModalNavWrapper.cModalNavImage
+{
+    overflow-y: scroll;
+    
+}
+
+.cModalNavWrapper.cModalNavGraphic
+{
+    width: 50px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.cModalNav
+{        
+    font-size: 2.3em;
+    height:32px;
+    width:32px;
+    margin:0px auto;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;   
+   
+}
+
+.cModalNav.cModalNavPrevious
+{
+    background-image: url('nav_up.png');
+/*    left: 6px;
+    top: 16px;
+    float: left;*/
+}
+
+.cModalNav.cModalNavNext
+{   
+    background-image: url('nav_down.png');
+    position: relative;
+    top:5px;
+/*    right: 10px;
+    top: -67px;
+    float: right;*/
+}
+
+[data-page-id="0"] .cModalNav.cModalNavPrevious
+{
+    visibility: hidden;
+}
+[data-page-id="1"] .cModalNav.cModalNavNext
+{
+    visibility: hidden;
+}
+.cModalNav
+{
+    color:#FFF;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    font-weight: bold;
+    /* line-height: 5px; */
+}
+
+.cModalNav:hover
+{
+    opacity: 1;    
+    cursor: pointer;
+}
+
+.cModalNavLinkWrapper
+{
+    /*display: inline-block;*/
+
+    height:540px;
+    overflow: hidden;
+    
+}
+
+.cNavLinkSlider
+{
+    position: relative;
+    top:0px;
+    overflow: hidden;
+}
+.cModalNavLink
+{
+    /*float: left;*/ 
+    position: relative;
+    background : #000;
+    overflow: hidden;
+}
+
+.cModalNavLink.cModalNavLinkImage
+{
+    width: 160px;
+    height:88px;
+    border:1px solid #333;;
+    border:1px solid rgba(255,255,255,0.2);
+    /*border-radius: 7px;*/
+    overflow: hidden;
+}
+.cModalNavLink.cModalNavLinkImage.cActive
+{
+    border:1px solid orange;
+}
+
+.cModalNavLink.cModalNavLinkImage img
+{
+    width:auto;
+    height:100%;
+}
+
+.cModalNavLink.cModalNavLinkDot
+{     
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    border-radius: 50%;
+    top: 2px;
+    background: #FFF;
+}
+
+.cModalNavLink.cModalNavLinkDot:hover,
+.cModalNavLink.cModalNavLinkDot.cActive
+{
+    background: #FFF;
+}
+
+.cModalNavLink.cModalNavLinkDot .cModalNavLinkTooltip
+{
+    display: none;
+    position: absolute;
+    margin-top: -21px;
+    left: 0;
+    text-align: left;
+    width: 171px;
+}
+
+.cModalNavLink.cModalNavLinkDot:hover .cModalNavLinkTooltip
+{
+    display: block;
+}
+
+.cModalPageIndex
+{
+    font-size: 15px;
+    margin-left: 8px;
+    position:relative;
+    font-weight: bold;
+    top: 1px;
+}
+
