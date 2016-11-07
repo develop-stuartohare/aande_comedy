@@ -30,7 +30,7 @@ class Navigation extends Component {
 class NavigationItem extends Component {
 
 	onClick(e){
-		
+		if(this.props.default) return;
 		e.preventDefault();
 		$(this.props.href).velocity("scroll", { duration: 2000 });
 	}

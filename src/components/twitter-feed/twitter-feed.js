@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from '../../../components/image';
+import Image from '../image';
 
 import TwitterLogo from './images/twitter_bird.png';
 

@@ -7,7 +7,6 @@ import { AppContainer } from 'react-hot-loader';
 import Root from './root';
 import configureStore from './configure-store';
 
-import './animation-setup';
 
 import './index.less';
 
