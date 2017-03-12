@@ -22,30 +22,30 @@ import Scroll from '../../containers/scroll';
 class IntroSection extends Component {
 
 	onClick(e){
-		
+
 		e.preventDefault();
 		$('#upcoming').velocity("scroll", { duration: 2000 });
 	}
 
 	render(){
 		return (
-			<Section className="intro-section" id="home">							
-				<Container>									
-					<Logo id="logo"/>						
+			<Section className="intro-section" id="home">
+				<Container>
+					<Logo id="logo"/>
 					<SpeechBubble id="speech-bubble">
-						<p className="coming-soon">Coming Soon Spring 2017</p>
+						<p className="coming-soon">Performances 2017</p>
 						<h1 className="upcoming-link e-t-d osc-scale-animation">
 							<a href="#upcoming" onClick={this.onClick.bind(this)}>Enter The Dragons<br/><div className="arrow"/></a>
-						</h1>						
-					</SpeechBubble>				
-				</Container>		
-				<Clouds>		
-					<IntroHeads/>				
+						</h1>
+					</SpeechBubble>
+				</Container>
+				<Clouds>
+					<IntroHeads/>
 				</Clouds>
-			</Section>			
+			</Section>
 		)
 	}
-}	
+}
 
 
 import {scrollConnect} from '../../containers/scroll';
@@ -53,10 +53,10 @@ import {scrollConnect} from '../../containers/scroll';
 export default scrollConnect(
 	{
 		// '#logo':{
-		// 	y:0.5				
+		// 	y:0.5
 		// },
 		'#speech-bubble':{
-			y:-0.2		
-		}		
+			y:-0.2
+		}
 	}
 )(IntroSection);

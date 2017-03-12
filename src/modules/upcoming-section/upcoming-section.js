@@ -20,7 +20,21 @@ import Scroll from '../../containers/scroll';
 
 import ImageBlanker from '../../components/image-blanker';
 
-const Text1 = <span className="text-1"><span className="e-t-d">Enter The Dragons</span> takes a frank, funny and fearless <br/> look at the subject of female aging,<br/> examining the concerns and societal pressures <br/>that surround women as they pass fifty</span>
+const Text1 = (
+	<div>
+	<span className="text-1">
+		<span className="e-t-d">Enter The Dragons</span> takes a frank, funny and fearless <br/>
+		look at the subject of female aging,<br/>
+		examining the concerns and societal pressures <br/>that surround women as they pass fifty
+	</span>
+		<div className="show-dates">
+			<a href={'https://www.hackneyshowroom.com/joydissent/'} target="_blank">28 March, 2017, Hackney</a><br/>
+			<a href={'https://www.brightonfringe.org/box-office/shows/view/enter-dragons'} target="_blank">20 May, 2017, Brighton</a><br/>
+			<a href={'http://www.marlowetheatre.com/page/3120/Enter-The-Dragons/1385'} target="_blank">25 May, 2017, Canterbury</a><br/>
+			<a href={'https://www.brightonfringe.org/box-office/shows/view/enter-dragons'} target="_blank">27 May, 2017, Brighton</a><br/>
+		</div>
+	</div>
+);
 const Quote1 = <span>This is a perfect show - great performance, beautiful writing.<br/> I think it speaks to men, like me, too</span>
 const Text2 = <div className="text-2"><div className="block block-a">The show reclaims the archetypal Hero's Journey and reframes <br/>it from the perspective of the mature woman.</div><div className="block block-b">Banished from the land of the young, and beset by challenges, riddles and <br/>obstacles, our Protagonist must navigate this weird landscape, guided by mystical <br/>creatures and Seers who have gone before.</div></div>
 const Quote2 = <span>I'm 25 and it spoke to me so much - I'm fed so much stuff everywhere about looking young, being young, looking after myself now for the future and it's so much pressure. Was nice to be told getting old is okay!</span>
@@ -46,15 +60,15 @@ const TextAndGraphic=props=>{
 
 	let {imageWidth, textWidth} = props;
 	return (
-		<div className={className}>		
+		<div className={className}>
 			<Container>
-				<Row>	
+				<Row>
 					<Col width={imageWidth}>
 						<Image src={props.image} />
-					</Col>					
+					</Col>
 					<Col width={textWidth} className="col-text">
 						{props.text}
-					</Col>																
+					</Col>
 				</Row>
 			</Container>
 		</div>
@@ -68,19 +82,19 @@ TextAndGraphic.defaultProps = {
 
 const QuotationBlock = props => {
 
-	return (	
+	return (
 
 		<div className="quotation-block">
 			<InView>
 				<div className="quotation-block-content">
-					
+
 					<div className="quote-content">
-						{props.children}						
+						{props.children}
 					</div>
-					
+
 				</div>
-			</InView>			
-		</div>		
+			</InView>
+		</div>
 	)
 }
 
@@ -90,10 +104,10 @@ const QuotationBlock = props => {
 const FullWidthImageAndText = props =>{
 
 	return(
-		<div className="full-width-gfx">			
+		<div className="full-width-gfx">
 			<InView>
 				<div className="text-content">
-					<div className="text-content-inner">				
+					<div className="text-content-inner">
 					{props.text}
 					</div>
 				</div>
@@ -123,31 +137,31 @@ class UpcomingSection extends Component {
 			}
 		}
 
-		return(	
-			<Section className="upcoming-section" id="upcoming">									
-							
-				<FullWidthImageAndText image={KarenJackieImage} text={Text1}/>	
+		return(
+			<Section className="upcoming-section" id="upcoming">
+
+				<FullWidthImageAndText image={KarenJackieImage} text={Text1}/>
 				<QuotationBlock>
 					{Quote1}
 				</QuotationBlock>
-				<FullWidthImageAndText image={KarenJackieBWImage} text={Text2}/>	
+				<FullWidthImageAndText image={KarenJackieBWImage} text={Text2}/>
 				<QuotationBlock>
 					{Quote2}
-				</QuotationBlock>	
-				<TextAndGraphic className="crusaders" image={CrusadersImage} text={Text3} textWidth={63} imageWidth={37}/>	
+				</QuotationBlock>
+				<TextAndGraphic className="crusaders" image={CrusadersImage} text={Text3} textWidth={63} imageWidth={37}/>
 				<QuotationBlock>
 					{Quote3}
-				</QuotationBlock>	
+				</QuotationBlock>
 				<Container>
 					<div className="video-content">
 					<ReactPlayer url={'https://player.vimeo.com/video/183633554'} {...videoProps}/>
 					</div>
-				</Container>			
+				</Container>
 				<QuotationBlock>
 					{Quote4}
-				</QuotationBlock>			
+				</QuotationBlock>
 			</Section>
-		)		
+		)
 	}
 }
 
