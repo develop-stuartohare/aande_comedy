@@ -28,10 +28,8 @@ const Text1 = (
 		examining the concerns and societal pressures <br/>that surround women as they pass fifty
 	</span>
 		<div className="show-dates">
-			<a href={'https://www.hackneyshowroom.com/joydissent/'} target="_blank">28 March, 2017, Hackney</a><br/>
-			<a href={'https://www.brightonfringe.org/box-office/shows/view/enter-dragons'} target="_blank">20 May, 2017, Brighton</a><br/>
-			<a href={'http://www.marlowetheatre.com/page/3120/Enter-The-Dragons/1385'} target="_blank">25 May, 2017, Canterbury</a><br/>
-			<a href={'https://www.brightonfringe.org/box-office/shows/view/enter-dragons'} target="_blank">27 May, 2017, Brighton</a><br/>
+			<a href={'http://www.thecourtyard.org.uk/whatson/956/enter-the-dragons'} target="_blank">Courtyard Theatre, London, Oct 18/19/20 </a><br/>
+
 		</div>
 	</div>
 );

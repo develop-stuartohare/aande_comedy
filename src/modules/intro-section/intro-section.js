@@ -33,9 +33,13 @@ class IntroSection extends Component {
 				<Container>
 					<Logo id="logo"/>
 					<SpeechBubble id="speech-bubble">
-						<p className="coming-soon">Performances 2017</p>
+
 						<h1 className="upcoming-link e-t-d osc-scale-animation">
-							<a href="#upcoming" onClick={this.onClick.bind(this)}>Enter The Dragons<br/><div className="arrow"/></a>
+							<a href="#upcoming" onClick={this.onClick.bind(this)}>
+								Award winning show<br/>
+								<b>Enter The Dragons</b><br/>
+								New London Oct dates<br/>
+								<div className="arrow"/></a>
 						</h1>
 					</SpeechBubble>
 				</Container>
